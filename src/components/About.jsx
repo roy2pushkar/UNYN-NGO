@@ -3,12 +3,13 @@ import about from "./assets/bodyimg.png";
 import dot from "./assets/dot.png";
 import arrow from "./assets/arrow.png";
 import learnmore from "./assets/Learnmore.png";
+import abtimg from "./assets/abtimg.png";
 
 
 const About = () => {
     return (
-        <>
-        <div className='flex justify-center items-center ml-[150px] mr-[150px] gap-8'>
+        <div className='ml-[150px] mr-[150px]'>
+        <div className='flex justify-center items-center  gap-8'>
             <div>
                 <h1 className=' font-sans font-bold w-[543px] h-[231px] text-6xl leading-[3.5rem] '>
                     Empowering Youth for a Brighter Future
@@ -42,7 +43,21 @@ international student society committed to nurturing the talents and potential o
             </div>
 
         </div>
-        </>
+        <div className='mt-[147px] flex justify-between items-center'>
+     <h2 className='text-[#000] text-5xl font-bold leading-[3.5rem] w-[602px] h-[174px]'>
+        Empowering Youth for a Brighter Future: <p className='text-[#106690]'>UNYN’s Impact on Youth Individuals</p>
+     </h2>
+     <p className='w-[493px] h-[132px] text-[18px] font-normal leading-5 text-[#888E95] font-sans gap-12'>
+        United Youth Network (UNYN) is dedicated to empowering young
+ individuals by providing them with opportunities for growth and development. Through our international student society, we aim to nurture their talents and unlock their full potential. By investing in the youth today,
+ we believe that we can create a brighter and more promising future for tomorrow.
+     </p>
+        </div>
+        <div className=' mt-28 '>
+            <img className='w-[1140px] h-[690px] ' src={abtimg} alt='abtimg'>
+               </img>
+        </div>
+        </div>
     )
 }
 
