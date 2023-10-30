@@ -14,7 +14,7 @@ const Navbar = () =>{
     </div>
     <div>
     <button class="bg-blue-500  text-white font-bold py-2 px-4 rounded-full w-[175px] h-[48px]">
-  Button
+  Contact us
 </button>
     </div>
   </div>
