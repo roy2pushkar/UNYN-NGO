@@ -4,7 +4,7 @@ import logoW from "./assets/logoWhite.png"
 const Footer = () => {
     return (
 
-        <div className='bg-[#1AA7EC] w-[1440px] h-[609px] mt-[140px]'>
+        <div className='bg-[#1AA7EC] w-[1440px] h-[609px] mt-[40px]'>
             <div className='ml-[149px] mr-[150px] pt-[249px] flex justify-between items-center gap-24 '>
            <div className='flex flex-col justify-start gap-y-4'> 
            <img className='w-[108px] h-[28px]' src={logoW} alt='logo'>
