@@ -2,6 +2,7 @@ import React from "react";
 import starimg from './assets/starimg.png';
 import testimonial1 from './assets/testimonial1.png';
 import Testimonial2 from './assets/testimonial2.png';
+import testimonials3 from './assets/testimonials3.png';
 
 const Testimonials = () => {
 
@@ -68,7 +69,39 @@ const Testimonials = () => {
 
                 </div>
         </div>
-       </div>
+        <div className="ml-[149px] mr-[150px] mt-[140px]">
+           
+                <div className='flex justify-center items-center  gap-12'>
+            <div>
+                <h2 className=' font-sans font-bold w-[555px] h-[116px] text-4xl leading-[3rem] '>
+                Stay Updated with UNYN Newsletter
+                </h2>
+                <p className='w-[498px] h-[20px] text-[#888E95] text-[16px] font-normal leading-5'>
+                   Gets the latest updates, news and exciting opportunities for UNYN.
+                </p>
+                <div className=" flex gap-4 mt-2">
+  
+             
+             <input type="email" id="email" name="email" className="w-[340px] h-[48px]  px-2 py-2 border rounded-full shadow-sm focus:outline-none focus:ring border-[#1AA7EC]" placeholder="enter your email" />
+
+            <button className=" bg-blue-500  text-white font-bold py-2 px-4 mr-3 rounded-full w-[165px] h-[48px]">
+  Sign Up
+</button>
+             </div>
+             <p className="w-[308px] h-[17px] font-normal text-[12px] leading-3 pt-2 text-[#888E95]">
+                By signing up, you agree to our Term and Conditions.
+             </p>
+            </div>
+            <div className=''>
+               <img className='w-[555px] h-[310px]' src={testimonials3} alt='about'>
+               </img>
+               
+            </div>
+
+        </div>
+            </div>
+        </div>
+       
     )
 }
 
