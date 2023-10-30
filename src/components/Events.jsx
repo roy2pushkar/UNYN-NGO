@@ -3,6 +3,7 @@ import group11 from "./assets/Group 11.png";
 import group12 from "./assets/Group 12.png";
 import group14 from "./assets/Group 14.png";
 import learnmore from "./assets/Learnmore.png";
+import eventsimg from "./assets/Eventsimg.png";
 
 
 
@@ -63,7 +64,23 @@ const Events = () => {
                </img>
             </div>
             <div className='mt-[160px]'>
+                <div className='flex justify-center items-center  gap-12'>
+            <div>
+                <h2 className=' font-sans font-bold w-[555px] h-[174px] text-5xl leading-[3rem] '>
+                   Unlock Your Potential and Make a Lasting Impact with UNYN
+                </h2>
+                <p className='w-[555px] h-[154px] text-[#888E95] text-[18px] font-normal leading-5'>
+                   Joining UNYN offers a unique opportunity for personal growth, professional development, and making a positive difference in the world. Our dynamic and impactful international student society is dedicated to nurturing the talents and potential of young individuals across colleges and universities worldwide. Through our diverse range of programs, events, and initiatives, we empower the youth today to create a brighter and more promising future for tomorrow.
+                </p>
+                
+            </div>
+            <div className=''>
+               <img className='w-[555px] h-[456px]' src={eventsimg} alt='about'>
+               </img>
+               
+            </div>
 
+        </div>
             </div>
         </div>
     )
