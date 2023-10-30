@@ -6,6 +6,7 @@ import Events from "./components/Events";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs";
+import Join from "./components/Join";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Testimonials />
       <ContactUs />
       <Footer />
+      <Join />
     </div>
   );
 }
