@@ -15,20 +15,20 @@ const Join = () => {
   <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
     <div class="mb-4 relative">
       <label for="name" class="absolute px-2 -top-2 left-2 bg-white text-gray-600 text-xs">Name</label>
-      <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter your name" />
+      <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter your name" required />
     </div>
 
     <div class="mb-4 relative">
       <label for="email" class="absolute px-2 -top-2 left-2 bg-white text-gray-600 text-xs">Email</label>
-      <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter your email" />
+      <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter your email" required />
     </div>
      <div class="mb-4 relative">
       <label for="Phone Number" class="absolute px-2 -top-2 left-2 bg-white text-gray-600 text-xs">Phone Number</label>
-      <input type="number" id="number" name="number" class="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter your phone number" />
+      <input type="number" id="number" name="number" class="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter your phone number" required />
     </div>
      <div class="mb-4 relative">
       <label for="text" class="absolute px-2 -top-2 left-2 bg-white text-gray-600 text-xs"> College</label>
-      <input type="text" id="text" name="text" class="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter your college name" />
+      <input type="text" id="text" name="text" class="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter your college name" required />
     </div>
 
     

@@ -82,7 +82,7 @@ const Testimonials = () => {
                 <div className=" flex gap-4 mt-2">
   
              
-             <input type="email" id="email" name="email" className="w-[340px] h-[48px]  px-2 py-2 border rounded-full shadow-sm focus:outline-none focus:ring border-[#1AA7EC]" placeholder="enter your email" />
+             <input type="email" id="email" name="email" className="w-[340px] h-[48px]  px-2 py-2 border rounded-full shadow-sm focus:outline-none focus:ring border-[#1AA7EC]" placeholder="enter your email" required />
 
             <button className=" bg-blue-500  text-white font-bold py-2 px-4 mr-3 rounded-full w-[165px] h-[48px]">
   Sign Up

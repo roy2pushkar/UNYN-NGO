@@ -47,11 +47,11 @@ const ContactUs = () => {
       Say something
     </h2>
 
-    <input type="text" id="name" name="name" className="w-[480px] h-[54px] px-2 py-2 border rounded-md shadow-sm focus:outline-none focus:ring border-[#1AA7EC]" placeholder="your name..." />
+    <input type="text" id="name" name="name" className="w-[480px] h-[54px] px-2 py-2 border rounded-md shadow-sm focus:outline-none focus:ring border-[#1AA7EC]" placeholder="your name..." required />
 
-    <input type="email" id="email" name="email" className="w-[480px] h-[54px] px-2 py-2 border rounded-md shadow-sm focus:outline-none focus:ring border-[#1AA7EC]" placeholder="your mail..." />
+    <input type="email" id="email" name="email" className="w-[480px] h-[54px] px-2 py-2 border rounded-md shadow-sm focus:outline-none focus:ring border-[#1AA7EC]" placeholder="your mail..." required />
 
-    <textarea id="message" name="message" rows="8"  className="w-[480px] px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring border-[#1AA7EC]" placeholder="Enter your message..."></textarea>
+    <textarea id="message" name="message" rows="8"  className="w-[480px] px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring border-[#1AA7EC]" placeholder="Enter your message..." required></textarea>
 
     <button className="bg-blue-500 text-white font-normal w-[480px] h-[54px] py-2 px-4 mr-3 rounded-md">
       Join
