@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./assets/logo.png"
 
 const Join = () => {
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    form.action = "mailto:roy2000pushkar@gmail.com";
+
+    form.submit();
+
+    setIsFormSubmitted(true);
+  };
     return (
         <div className="ml-[150px] mr-[150px] pt-[48px] w-[480px] h-[562px]">
            <div className="flex flex-col justify-center items-end gap-y-2">
@@ -12,7 +24,9 @@ const Join = () => {
                </h5>
            </div>
 <div class="w-[480px] h-[562px] ml-[150px] mr-[150px]">
-  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+  <form  
+  onSubmit={handleSubmit}
+  class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
     <div class="mb-4 relative">
       <label for="name" class="absolute px-2 -top-2 left-2 bg-white text-gray-600 text-xs">Name</label>
       <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter your name" required />
@@ -39,8 +53,13 @@ const Join = () => {
     </button> 
     </div>
   </form>
+  {isFormSubmitted && (
+        <div className="text-center text-blue-600">
+          Form submitted! Please check your email.
+        </div>
+      )}
 </div>
-
+  
         </div>
     )
 }

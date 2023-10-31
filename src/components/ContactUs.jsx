@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import mail from "./assets/mail.png";
 import phone from "./assets/phone.png";
 import locaton from "./assets/location.png";
 
 const ContactUs = () => {
+    const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    form.action = "mailto:recipient@example.com"; // Replace with the recipient's email
+
+    form.submit();
+
+    setIsFormSubmitted(true);
+  };
     return (
 
         <div className="ml-[149px] mr-[150px] mt-[140px] flex justify-between items-center gap-16 ">
@@ -42,7 +54,9 @@ const ContactUs = () => {
            </div>
           </div>
           <div className="relative">
-  <div className="w-[555px] h-[552px] flex flex-col items-center gap-y-4 ml-2  mb-[-248px]  flex-shrink-0 shadow-lg shadow-rgba(26, 167, 236, 0.12)">
+  <form onSubmit={handleSubmit}
+  className="">
+    <div className="w-[555px] h-[552px] flex flex-col items-center gap-y-4 ml-2  mb-[-248px]  flex-shrink-0 shadow-lg shadow-rgba(26, 167, 236, 0.12)">
     <h2 className="font-bold text-[36px] leading-[3rem] text-[#000000] w-[256px] h-[58px]">
       Say something
     </h2>
@@ -57,6 +71,12 @@ const ContactUs = () => {
       Join
     </button>
   </div>
+  {isFormSubmitted && (
+        <div className="text-center text-white">
+          Form submitted! Please check your email.
+        </div>
+      )}
+  </form>
 </div>
 
         </div>
