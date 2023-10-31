@@ -40,7 +40,7 @@ const Testimonials = () => {
                <p className="text-[18px] font-semibold leading-5 w-[555px] h-[44px]">
                 UNYN has provided me with incredible opportunities to grow and connect with like-minded individuals.
                </p>
-               <div className="flex  justify-start items-center gap-y-4">
+               <div className="flex  justify-start items-center gap-4">
                   <img className='w-[60px] h-[60px]' src={Testimonial2} alt='about'>
                </img>
                <div className="">

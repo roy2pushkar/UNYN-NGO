@@ -5,7 +5,7 @@ const Join = () => {
     return (
         <div className="ml-[150px] mr-[150px] pt-[48px] w-[480px] h-[562px]">
            <div className="flex flex-col justify-center items-end gap-y-2">
-             <img className='  w-[108px] h-[64px] mr-[16%] ' src={logo} alt='arrow'>
+             <img className='  w-[108px] h-[72px] mr-[16%] ' src={logo} alt='arrow'>
                </img>
                <h5 className="font-bold text-[26px] leading-7  w-[243px] h-[24px] text-center ">
                 Fill details to join
